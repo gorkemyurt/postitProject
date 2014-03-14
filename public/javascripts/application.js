@@ -4,6 +4,9 @@ require.config({
     // 'jquery': 'lib/jquery',
     'backbone': 'lib/backbone',
     'text': 'lib/text',
+    'jsx' : 'lib/jsx',
+    'JSXTransformer' : 'lib/JSXTransformer',
+    'react' : 'lib/react',
     'underscore': 'lib/underscore',
     'bootstrap' : 'lib/bootstrap',
     'marionette' : 'lib/backbone.marionette',
@@ -15,17 +18,12 @@ require.config({
     "deferred" : 'lib/deferred1',
 
 //backbone app
-    "MyApp" : 'app',
-
+    "MyApp" : "app",
 //backbone models and collections
-    'Email' : 'models/email',
-    "Emails" : 'collections/emails',
-
+    "Notes" : "collections/notes",
 //backbone views
-    "EmailsView" : 'views/EmailsView',
-    "EmailView" : 'views/EmailView',
-    "NoEmailView" : 'views/NoEmailView',
-
+    "TodoListItem" : "views/TodoListItem",
+    "TodoList" : "views/TodoList",
 //foundation
     "foundation": "foundation/foundation",
     "foundation.alerts": "foundation/foundation.alerts",
@@ -121,7 +119,7 @@ require(
     "backbone",
     "less",
     "marionette",
-    "MyApp",
+    "jsx!MyApp",
     "socketio",
     "deferred",
     "foundation.alerts",
@@ -139,9 +137,8 @@ require(
     "foundation.tooltips",
     "foundation.topbar"
   ],
-  function($ , _, Backbone, less, Marionette, MyApp, io, Deferred) {
+  function($ , _, Backbone, Marionette, MyApp) {
 
-    $(document).foundation();
 
 
   });

@@ -7,16 +7,17 @@ var mongoose = require('mongoose')
  , _ = require('underscore')
 
 exports.login = function(req,res){
-	if(req.user){
-		global.id = req.user.id;
-		global.email = req.user.email;
-		console.log(req.user);
-		res.send(req.profile);
-		res.render('index' , {user : req.user.id});
-	}
-	else{
-		res.render('login')
-	}
+	res.render('index');
+	// if(req.user){
+	// 	global.id = req.user.id;
+	// 	global.email = req.user.email;
+	// 	console.log(req.user);
+	// 	res.send(req.profile);
+	// 	res.render('index' , {user : req.user.id});
+	// }
+	// else{
+	// 	res.render('login')
+	// }
 }
 
 
