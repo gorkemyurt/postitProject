@@ -19,12 +19,11 @@ html(lang='en')
 
         section
             div.row
-                section.columns.small-12.large-6.post-container
+                div.columns.small-12.large-6.post-container
                     h1.center Good
-                    div.post-container.border-right(id="good-container")
-                section.columns.small-12.large-6.post-container
+                div.columns.small-12.large-6.post-container
                     h1.center Bad
-                    div.post-container.border-left(id="bad-container")
-
+                div.columns(id="main")
+                //- div.post-container.border-right(id="good-container")
         script(src='/javascripts/lib/require.js', data-main='/javascripts/application.js')
 

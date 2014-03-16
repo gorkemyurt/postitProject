@@ -10,9 +10,10 @@ define([
 ], function ($, _, Backbone, Marionette, React, TodoListItem) {
 	'use strict';
 
-    var TodoList = React.createClass({
+    var BadList = React.createClass({
             render: function () {
                 var notes = this.props.todos.map(function (model) {
+                    console.log(model);
                     return <TodoListItem model={model} />;
                 });
 
@@ -20,7 +21,7 @@ define([
             }
     });
 
-	return TodoList;
+	return BadList;
 });
 
 
