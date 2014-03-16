@@ -1,14 +1,18 @@
 /** @jsx React.DOM */
 
 define([
-	'zepto',
+	'jquery',
 	'underscore',
 	'backbone',
 	'marionette',
-	'react'
+	'react',
+	'jquery-ui'
 ], function ($, _, Backbone, Marionette, React) {
 	'use strict';
 	var TodoListItem = React.createClass({
+		componentDidMount : function () {
+			$(this.refs.div.getDOMNode()).draggable();
+		},
 		handleDragEnter : function (){
 			$(this.refs.div.getDOMNode()).addClass("drag");
 		},

@@ -1,7 +1,7 @@
 
 require.config({
   paths: {
-    // 'jquery': 'lib/jquery',
+    'jquery': 'lib/jquery',
     'backbone': 'lib/backbone',
     'text': 'lib/text',
     'jsx' : 'lib/jsx',
@@ -14,8 +14,9 @@ require.config({
     'less' : 'lib/less',
     'socketio': '../socket.io/socket.io',
     'moment' : 'lib/moment.min',
-    "zepto" : 'lib/zepto',
-    "deferred" : 'lib/deferred1',
+    'zepto' : 'lib/zepto',
+    'deferred' : 'lib/deferred1',
+    'jquery-ui' : 'lib/jquery-ui',
 
 //backbone app
     "MyApp" : "app",
@@ -114,7 +115,7 @@ require.config({
 
 require(
 
-  [ "zepto",
+  [ "jquery",
     "underscore",
     "backbone",
     "less",
