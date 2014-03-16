@@ -22,8 +22,8 @@ require.config({
 //backbone models and collections
     "Notes" : "collections/notes",
 //backbone views
-    "TodoListItem" : "views/TodoListItem",
-    "TodoList" : "views/TodoList",
+    "TodoListItem" : "views/TodoListItemView",
+    "TodoList" : "views/TodoListView",
 //foundation
     "foundation": "foundation/foundation",
     "foundation.alerts": "foundation/foundation.alerts",
