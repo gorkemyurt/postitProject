@@ -18,12 +18,19 @@ html(lang='en')
       body
 
         section
-            div.row
-                div.columns.small-12.large-6.post-container
-                    h1.center Good
-                div.columns.small-12.large-6.post-container
-                    h1.center Bad
-                div.columns(id="main")
+            //- div
+            //-     a.button(href="#") Add New
+            //- div.row
+            //-     div.columns.large-12
+            //-         div.columns.small-12.large-6.post-container
+            //-             h1.center Good :)
+            //-                 span.green   +
+            //-             div.post-container.border-right(id="good-container")
+            //-         div.columns.small-12.large-6.post-container
+            //-             h1.center Bad :(
+            //-                 span.red     +
+            //-             div.post-container.border-left(id="bad-container")
+            //-         div.columns.large-12(id="main")
                 //- div.post-container.border-right(id="good-container")
         script(src='/javascripts/lib/require.js', data-main='/javascripts/application.js')
 

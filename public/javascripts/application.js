@@ -25,6 +25,8 @@ require.config({
 //backbone views
     "TodoListItem" : "views/TodoListItemView",
     "TodoList" : "views/TodoListView",
+    "BadListHeader" : "views/BadListHeaderView",
+    "GoodListHeader" : "views/GoodListHeaderView",
 //foundation
     "foundation": "foundation/foundation",
     "foundation.alerts": "foundation/foundation.alerts",
