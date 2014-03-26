@@ -70,45 +70,6 @@ require.config({
     "foundation": {
             deps: ["zepto"]
     },
-    "foundation.alerts": {
-        deps: ["foundation"]
-    },
-    "foundation.clearing": {
-        deps: ["foundation"]
-    },
-    "foundation.cookie": {
-        deps: ["foundation"]
-    },
-    "foundation.dropdown": {
-        deps: ["foundation"]
-    },
-    "foundation.forms": {
-        deps: ["foundation"]
-    },
-    "foundation.joyride": {
-        deps: ["foundation"]
-    },
-    "foundation.magellan": {
-        deps: ["foundation"]
-    },
-    "foundation.orbit": {
-        deps: ["foundation"]
-    },
-    "foundation.placeholder": {
-        deps: ["foundation"]
-    },
-    "foundation.reveal": {
-        deps: ["foundation"]
-    },
-    "foundation.section": {
-        deps: ["foundation"]
-    },
-    "foundation.tooltips": {
-        deps: ["foundation"]
-    },
-    "foundation.topbar": {
-        deps: ["foundation"]
-    },
     'socketio': {
       exports: 'io'
     },
@@ -125,20 +86,7 @@ require(
     "jsx!MyApp",
     "socketio",
     "deferred",
-    "foundation.alerts",
-    "foundation.clearing",
-    "foundation.cookie",
-    "foundation.dropdown",
-    "foundation.forms",
-    "foundation.joyride",
-    "foundation.magellan",
-    "foundation.orbit",
-    "foundation.placeholder",
-    "foundation.topbar",
-    "foundation.reveal",
-    "foundation.section",
-    "foundation.tooltips",
-    "foundation.topbar"
+
   ],
   function($ , _, Backbone, Marionette, MyApp) {
 
