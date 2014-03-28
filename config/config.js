@@ -6,7 +6,7 @@ var path = require('path')
 var rootPath = path.resolve(__dirname + '../..')
 
 /**
- * Expose config
+ * Expose config fdf
  */
 
 module.exports = {
