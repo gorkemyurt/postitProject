@@ -1,16 +1,17 @@
 define([
-	'zepto',
-	'underscore',
-	'backbone',
-	'marionette',
-], function ($, _, Backbone, Marionette) {
-	'use strict';
+  'zepto',
+  'underscore',
+  'backbone',
+  'marionette',
+  'Note'
+], function ($, _, Backbone, Marionette, Note) {
+  'use strict';
 
-	var Notes = Backbone.Collection.extend({
+  var Notes = Backbone.Collection.extend({
 
+    model : Note
 
+  });
 
-	});
-
-	return Notes;
+  return Notes;
 });

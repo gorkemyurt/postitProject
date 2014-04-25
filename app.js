@@ -33,9 +33,9 @@ global.io.set('log level', 2);
 
 
 //this is important for Heroku
-global.io.configure(function () { 
-  global.io.set("transports", ["xhr-polling"]); 
-  global.io.set("polling duration", 10); 
+global.io.configure(function () {
+  global.io.set("transports", ["xhr-polling"]);
+  global.io.set("polling duration", 10);
 });
 
 
@@ -62,7 +62,14 @@ global.io.sockets.on('connection', function (socket) {
     //   global.users[global.id] = socket;
     // }
     console.log(Object.keys(global.users))
+    socket.on('position', function(data){
+      console.log(data);
+      socket.broadcast.emit('position' + data.id, data.position)
+    });
 });
+
+
+
 
 var port = process.env.PORT || 3000
 server.listen(port)
