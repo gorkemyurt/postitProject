@@ -22,6 +22,7 @@ require.config({
     "MyApp" : "app",
 //backbone models and collections
     "Notes" : "collections/notes",
+    "Note"  : "models/note",
 //backbone views
     "TodoListItem" : "views/TodoListItemView",
     "TodoList" : "views/TodoListView",
@@ -88,7 +89,7 @@ require(
     "deferred",
 
   ],
-  function($ , _, Backbone, Marionette, MyApp) {
+  function($ , _, Backbone, Marionette, MyApp, socketio) {
 
 
 
